@@ -511,15 +511,24 @@ section {
   background-color: #0563bb;
 }
 
+/*---------Start rating------------*/
+
+.checked {
+    color: orange;
+}
+p.TwinCat_Text{
+    margin-left : 0px;
+    margin-top  : 10px;
+}
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
 .resume .resume-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #45505b;
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #45505b;
 }
 
 .resume .resume-item {
@@ -1207,3 +1216,4 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
