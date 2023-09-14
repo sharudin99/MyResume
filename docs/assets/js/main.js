@@ -1,4 +1,4 @@
-/**
+﻿/**
 * Template Name: MyResume
 * Updated: Jul 27 2023 with Bootstrap v5.3.1
 * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
@@ -265,6 +265,64 @@
   /**
    * Initiate Pure Counter 
    */
-  new PureCounter();
+    new PureCounter();
+
+
+    //-------Radar chart------------//
+    let chartConfig = {
+        type: 'radar',
+        plot: {
+            aspect: 'area',
+            animation: {
+                effect: 3,
+                sequence: 1,
+                speed: 700,
+            },
+        },
+        scaleV: {
+            visible: false,
+        },
+        scaleK: {
+            values: '0:4:1',
+            labels: ['PLC Programming', 'HMI Development', 'C Programming', 'Embedded system', 'HTML'],
+            guide: {
+                alpha: 0.3,
+                backgroundColor: '#c5c5c5 #718eb4',
+                lineColor: '#607D8B',
+                lineStyle: 'solid',
+            },
+            item: {
+                backgroundColor: 'white',
+                borderColor: '#aeaeae',
+                borderRadius: '10px',
+                borderWidth: '1px',
+                fontColor: '#607D8B',
+                padding: '5 10',
+            },
+            refLine: {
+                lineColor: '#c10000',
+            },
+            tick: {
+                lineColor: '#59869c',
+                lineWidth: '2px',
+                lineStyle: 'dotted',
+                size: 20,
+            },
+        },
+        series: [
+            {
+                values: [95, 95, 60, 60, 30],
+                text: 'farm',
+            },
+        ],
+    };
+
+    zingchart.render({
+        id: 'myChart',
+        data: chartConfig,
+        height: '100%',
+        width: '100%',
+    });
+
 
 })()
