@@ -740,6 +740,13 @@ section {
   background: rgba(69, 80, 91, 0.8);
 }
 
+/* Make sure the image is responsive */
+.portfolio-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .portfolio .portfolio-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.7);
@@ -1467,6 +1474,7 @@ body {
     width: 100%;
     min-height: 70vh;
     height: auto;
+    object-fit:contain;
 }
 
 .carousel-inner > .active,
@@ -1611,7 +1619,7 @@ body {
 
 .carousel-video {
     display: block;
-    object-fit:fill;
+    object-fit:contain;
     position: absolute;
     top: 50%;
     left: 50%;
